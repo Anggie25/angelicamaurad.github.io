@@ -471,5 +471,76 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+<style>
+    #evaluacion-contenido {
+        display: none;
+    }
+</style>
+</head>
+<body>
 
+<!-- ... (código anterior) ... -->
+
+<!-- Botón de Evaluación -->
+<button onclick="mostrarEvaluacion()" class="btn custom-btn mt-3">Evaluación</button>
+
+<!-- Contenido de Evaluación -->
+<div id="evaluacion-contenido" class="container mt-4">
+    <h2>Concepto de virtualización con foto</h2>
+    <img src="C:/Users/Tecnológico/Downloads/Imagen de virtualizacion.jpg" alt="Imagen de virtualización">
+    <p>Concepto de virtualización.</p>
+    La virtualización es una tecnología innovadora que permite crear versiones virtuales de recursos informáticos, como servidores, redes o sistemas operativos. En lugar de depender de una única instancia física, la virtualización posibilita la creación de múltiples entornos virtuales en un mismo hardware.
+    Imagina que tienes un servidor físico potente, mediante la virtualización, puedes dividirlo en varios servidores virtuales independientes. 
+    Cada uno de estos servidores virtuales actúa como una entidad autónoma, con su propio sistema operativo y recursos asignados, aunque comparten el mismo hardware subyacente.
+    Esta flexibilidad proporcionada por la virtualización ofrece ventajas significativas, como la optimización del uso de recursos, mayor eficiencia, y la capacidad de aislar y gestionar fácilmente entornos de software. En resumen, la virtualización revoluciona la forma en que utilizamos y gestionamos la infraestructura informática, brindando mayor agilidad y eficacia en el despliegue y mantenimiento de sistemas.
+
+    <h2>Tipos de virtualización con foto</h2>
+    <img src="ruta_a_la_imagen_tipos.jpg" alt="Imagen de tipos de virtualización">
+    <p>Descripción de los tipos de virtualización.</p>
+    Virtualización de Servidores:
+
+Descripción: Esta tecnología permite dividir un servidor físico en varios servidores virtuales. Cada servidor virtual opera como una entidad independiente con su propio sistema operativo y recursos. Es ideal para optimizar el uso de hardware, reducir costos y simplificar la administración de servidores.
+Virtualización de Almacenamiento:
+
+Descripción: Consiste en abstraer los recursos de almacenamiento físico y presentarlos como un único recurso virtual. Esto facilita la administración eficiente del almacenamiento, permitiendo ajustes dinámicos y una gestión centralizada.
+Virtualización de Red:
+
+Descripción: Crea redes virtuales separadas de la infraestructura física, permitiendo segmentación y aislamiento. Es útil para mejorar la seguridad, simplificar la configuración de redes y facilitar la implementación de entornos aislados.
+Virtualización de Escritorio:
+
+Descripción: Proporciona escritorios virtuales a usuarios finales, permitiendo el acceso desde diversos dispositivos. Esto simplifica la administración de escritorios, proporciona mayor movilidad y facilita el acceso remoto a los entornos de trabajo.
+Virtualización de Aplicaciones:
+
+Descripción: Separa las aplicaciones del sistema operativo subyacente, permitiendo su ejecución en entornos virtuales. Esto mejora la compatibilidad de aplicaciones, facilita el despliegue eficiente y proporciona aislamiento de recursos.
+Virtualización de Hardware:
+
+Descripción: Utiliza un hipervisor para crear máquinas virtuales que ejecutan sistemas operativos independientes en un mismo hardware físico. Es esencial para consolidar servidores, migrar sistemas y realizar pruebas de software en entornos controlados.
+Cada tipo de virtualización ofrece beneficios específicos, desde la optimización de recursos hasta la mejora de la flexibilidad y la seguridad en el entorno informático. La elección del tipo adecuado dependerá de los objetivos y las necesidades particulares de la infraestructura de cada organización.
+    <h2>Concepto de Docker con foto (Imagen y Contenedor)</h2>
+    <img src="ruta_a_la_imagen_docker.jpg" alt="Imagen de Docker">
+    <p>Concepto de Docker y la diferencia entre imagen y contenedor.</p>
+    Imagen:
+
+Definición: Una imagen en Docker es un paquete independiente y ejecutable que incluye todo lo necesario para ejecutar una aplicación, desde el código hasta las bibliotecas y configuraciones.
+Características: Las imágenes son estáticas, inmutables y se utilizan como plantillas para crear contenedores.
+Uso: Se crean a partir de un archivo Dockerfile y se almacenan en un registro, como Docker Hub, para que puedan ser compartidas y utilizadas en diferentes entornos.
+Contenedor:
+
+Definición: Un contenedor es una instancia en ejecución de una imagen Docker. Representa un entorno aislado donde la aplicación puede ejecutarse sin interferencias con el sistema operativo subyacente u otras aplicaciones.
+Características: Los contenedores son dinámicos, ligeros y pueden compartir recursos del sistema operativo host. Cada contenedor tiene su propio sistema de archivos y procesos, pero comparte el kernel del sistema operativo anfitrión.
+Uso: Los contenedores se crean a partir de imágenes, y múltiples contenedores pueden ejecutarse en la misma máquina física, compartiendo recursos y manteniendo la consistencia.
+</div>
+
+
+<!-- Script para mostrar/ocultar el contenido de evaluación -->
+<script>
+    function mostrarEvaluacion() {
+        var evaluacionContenido = document.getElementById("evaluacion-contenido");
+        if (evaluacionContenido.style.display === "none") {
+            evaluacionContenido.style.display = "block";
+        } else {
+            evaluacionContenido.style.display = "none";
+        }
+    }
+</script>
 </html>
